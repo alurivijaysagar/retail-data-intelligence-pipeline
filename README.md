@@ -64,6 +64,8 @@ that share some but not all values.
 | Database | MySQL retail_db |
 
 ## Project Structure
+
+```
 retail-data-intelligence-pipeline/
 ├── src/
 │   ├── 01_extract.py        # Load raw Excel data
@@ -72,6 +74,7 @@ retail-data-intelligence-pipeline/
 ├── data/
 │   └── processed/           # Clean CSVs output
 └── README.md
+```
 
 ## Author
 
