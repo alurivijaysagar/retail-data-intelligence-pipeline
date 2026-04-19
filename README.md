@@ -12,22 +12,16 @@ loads clean, separated datasets into a production MySQL database —
 ready for business intelligence queries.
 
 ## Pipeline Architecture
-Raw Excel (541K rows)
-↓
-Extract & Load
-↓
-Detect Duplicates
-↓
-Separate Sales vs Refunds
-(3-condition refund logic)
-↓
-Calculate Revenue Metrics
-↓
-Export Clean CSVs
-↓
-Load into MySQL Database
-(sales table: 530,033 rows)
-(refunds table: 10,414 rows)
+
+| Step | Description |
+|------|-------------|
+| 1 | Raw Excel input (541,909 rows) |
+| 2 | Extract & load into Pandas |
+| 3 | Detect & flag duplicates |
+| 4 | Separate Sales vs Refunds (3-condition logic) |
+| 5 | Calculate revenue metrics |
+| 6 | Export clean CSVs |
+| 7 | Load into MySQL (530,033 sales + 10,414 refunds) |
 
 ## Key Technical Decisions
 
