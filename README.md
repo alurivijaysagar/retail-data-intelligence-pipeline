@@ -1,5 +1,3 @@
-markdown# Retail Data Intelligence Pipeline
-
 An end-to-end ETL pipeline that processes 541,000+ real-world retail 
 transactions — from raw messy Excel data to a clean, query-ready MySQL 
 analytics database.
